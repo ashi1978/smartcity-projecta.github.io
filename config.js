@@ -113,7 +113,7 @@ window.SITE_CONFIG = {
         image: "assets/img/image4.jpg"
       },
       {
-				title: "Step 4: Traffic Signal Intervention (Scenario 2),
+				title: "Step 4: Traffic Signal Intervention (Scenario 2)",
 				text: "Reduce green-light phases from 27 to 18 seconds and evaluate speed-density changes on Edge E16.",
         image: "assets/img/image5.jpg"
       }
@@ -181,6 +181,7 @@ window.SITE_CONFIG = {
     }
   },
 
+	results: {
   discussionTitle: "Results & Discussion",
   discussionBullets: [
     "Base Scenario (100% HDV): Estimated free-flow speed of 4.39 m/s and jam density of 185.2 veh/km.",
