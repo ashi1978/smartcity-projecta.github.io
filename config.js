@@ -12,10 +12,10 @@ window.SITE_CONFIG = {
     // updated tagline text (big pill)
     tagline: "Course Project: Smart Cities and Communities",
 
-    studentName: "Yohan Mohammadi",
-    program: "Program / Department",
+    studentName: "Ayesha Mehmood",
+    program: "Automation Engineering Technology/ BTech",
     university: "McMaster University, Canada",
-    email: "your.email@example.com"
+    email: "mehmoa3@mcmaster.ca"
   },
 
   disclaimer: {
@@ -58,12 +58,12 @@ window.SITE_CONFIG = {
 
   intro: {
     projectTitleLabel: "Project Title",
-    projectTitle: "Development of Digital Twin of a Railway Corridor Using Unity Game Engine and SUMO Traffic Simulation",
+    projectTitle: "SUMO-Based Traffic Simulation and Analysis of Finch Avenue East and Tapscott Road",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
     heroVideoAlt: "Autoplay preview video (academic project)",
     videoCaption:
-      "Autoplay preview (≈20 seconds): raw video → Traffic Simulation → Blender → Unity → Results"
+      "Traffic simulation of the HDV and AV cars"
   },
 
   caseStudy: {
