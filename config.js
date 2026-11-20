@@ -71,26 +71,26 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Global freight rail is growing and remains strategically important.",
-			"Rail carries about 18% of EU inland freight, 36% in the U.S., and 27% in India.",
-			"Road dominates many freight systems, so rail often receives less attention.",
-			"In Canada, rail accounted for 10.5% of international merchandise trade value in 2024."
+			"Digital traffic modelling helps evaluate intersection operations under different traffic conditions.",
+			"This study focuses on Finch Avenue East and Tapscott Road in Toronto, using SUMO to simulate traffic flow.",
+			"The study compares 100% human-driven vehicles (HDVs) with 100% connected and autonomous vehicles (CAVs).",
+			"A third scenario modifies traffic signal timing from 27 to 18 seconds to evaluate its impact on traffic performance."
     ],
 
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Railway operations are hard to assess.",
-			"3D asset creation is time-consuming.",
-			"2D models lack immersion.",
-			"Results are difficult to communicate."
+			"A digital traffic baseline is needed to understand existing intersection conditions and identify potential traffic issues.",
+			"The impact of 100% CAV traffic compared to 100% HDV traffic must be evaluated under consistent simulation conditions.",
+			"The effectiveness of traffic signal modifications is uncertain and requires testing before real-world implementation.",
+			"The study compares speed-density relationships on Edge E16 to determine how vehicle behaviour and reduced signal timing affect traffic performance."
     ],
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-			"Simulate train scheduling, signaling, and capacity in SUMO.",
-			"Create 3D digital assets using generative AI and blender.",
-			"Create 3D rail environment and VR video in Unity.",
-			"Present results in different styles through KPIs, figures, and a showcase website."
+			"Develop a SUMO traffic model of Finch Avenue East and Tapscott Road in Toronto.",
+			"Establish baseline traffic conditions using 100% human-driven vehicles (HDVs).",
+			"Compare 100% HDV and 100% connected and autonomous vehicle (CAV) traffic using speed-density relationships",
+			"Evaluate the impact of reducing green-light phases from 27 to 18 seconds on traffic performance along Edge E16."
     ]
   },
 
