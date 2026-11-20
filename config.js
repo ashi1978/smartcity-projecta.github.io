@@ -28,22 +28,22 @@ window.SITE_CONFIG = {
       "Academic Project · Educational Use Only · Not Official City Work"
   },
 
-  theme: {
-    heroBg: "#111111",
-    heroText: "#ffffff",
-    pageBg: "#f8fafc",
-    accent: "#7c3aed"
+theme: {
+    heroBg: "#F8D7E8",
+    heroText: "#5C2943",
+    pageBg: "#FFF7FA",
+    accent: "#D96C9D"
   },
 
   dividers: {
-    dividerBg: "#f9f9f9",
-    dividerText: "#ffffff"
+    dividerBg: "#FCE4EF",
+    dividerText: "#5C2943"
   },
 
   footer: {
-    footerBg: "#111111",
-    footerText: "#ffffff",
-    footerBorder: "#222222",
+    footerBg: "#F8D7E8",
+    footerText: "#5C2943",
+    footerBorder: "#E8A6C5",
 
     homeLinkText: "RoadwayVR",
 
@@ -170,12 +170,12 @@ window.SITE_CONFIG = {
 
     charts: {
       left: {
-        title: "Scenario 1 — 100% HDV vs. 100% CAV",
+        title: "Base Scenario (100% HDV base)",
         src: "assets/img/image6.jpg",
         alt: "Speed-density comparison between the Base Scenario with 100% HDVs and Scenario 1 with 100% CAVs"
       },
       right: {
-        title: "Scenario 2 — Base vs. Signal Timing Intervention",
+        title: "Scenario 1 (100% CAV)",
         src: "assets/img/image7.jpg",
         alt: "Speed-density comparison between the Base Scenario and Scenario 2 with reduced traffic signal timing"
       }
@@ -197,7 +197,7 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Your Name", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
+      { name: "Ayesha Mehmood", role: "Data collectin + Literature review + writing" }
     ],
 
     acknowledgments: [
@@ -208,6 +208,6 @@ window.SITE_CONFIG = {
     ],
 
     repoLabel: "Project Repository",
-    repoUrl: "https://github.com/USERNAME/REPO"
+    repoUrl: "https://github.com/ashi1978/smartcity-projecta.github.io"
   }
 };
