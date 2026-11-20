@@ -124,71 +124,72 @@ window.SITE_CONFIG = {
     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
-        title: "Module 1: Train Scheduling & Signaling (SUMO)",
+        title: "Module 1: Roadway Network Development (SUMO)",
         bullets: [
-				  { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
-          { text: "Design fixed-block rail signals and define station stops along the corridor." },
-          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
+				  { text: "Develop the Finch Avenue East and Tapscott Road network using GIS maps and SUMO NetEdit." },
+          { text: "Configure major roads, local roads, lane configurations, and turning movements." },
+          { text: "Check roadway connectivity, junction geometry, and intersection connections." }
         ],
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: Digital Twin Assets Developement (Blender)",
+        title: "Module 2: Baseline Traffic Simulation (100% HDV)",
         bullets: [
-          { text: "Generative AI: use Meshy.ai tool to develop different assets." },
-          { text: "From generative AI to belnder." },
-          { text: "Preprocessing assets in Blender ." }
+          { text: "Introduce traffic demand of 150 vehicles/hour per permitted lane movement." },
+          { text: "Configure two 27-second green phases and two 3-second yellow phases." },
+          { text: "Run a 3,600-second simulation and collect speed-density data from Edge E16." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Immersive VR Visualization (Unity)",
+        title: "Module 3: Autonomous Vehicle Simulation (100% CAV)",
         bullets: [
-				  { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
-          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
-          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
+				  { text: "Replace 100% HDVs with 100% CAVs using the CACC car-following model." },
+          { text: "Apply CAV settings: 2.9 m/s² acceleration, 7.5 m/s² deceleration, and 0.6-second time headway." },
+          { text: "Maintain consistent traffic conditions and compare speed-density results on Edge E16." }
         ],
         image: "assets/img/image4.jpg"
       },
       {
-        title: "Module 4: Results & Communication",
+        title: "Module 4: Traffic Signal Timing Intervention (Scenario 2)",
         bullets: [
-          { text: "Dashboard or plot set: KPI cards, bar charts, and/or time series." },
-          { text: "Scenario story: what changed, what improved, and what tradeoffs appeared." },
-          { text: "Limitations + next steps: what data would strengthen confidence." }
+          { text: "Reduce both green-light phases from 27 to 18 seconds while keeping 3-second yellow phases." },
+          { text: "Shorten the overall signal cycle from 60 to 42 seconds under 100% HDV conditions." },
+          { text: "Compare speed-density relationships on Edge E16 before and after the intervention." }
         ],
         image: "assets/img/image5.jpg"
       }
     ]
   },
 
-	results: {
-			title: "Results & Potential Improvements",
-			subtitle:
-				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
+	
+{
+  title: "Results & Potential Improvements",
+  subtitle:
+    "Speed-density analysis of Edge E16 comparing HDV and CAV traffic performance and evaluating the effects of modified traffic signal timing.",
 
-			charts: {
-				left: {
-					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image6.jpg",
-					alt: "Scenario 1 train schedule chart showing arrivals and departures across S1 to S4"
-				},
-				right: {
-					title: "Scenario 2 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image7.jpg",
-					alt: "Scenario 2 train schedule chart showing arrivals and departures across S1 to S4"
-				}
-			},
+  charts: {
+    left: {
+      title: "Scenario 1 — 100% HDV vs. 100% CAV",
+      src: "assets/img/image6.jpg",
+      alt: "Speed-density comparison between the Base Scenario with 100% HDVs and Scenario 1 with 100% CAVs"
+    },
+    right: {
+      title: "Scenario 2 — Base vs. Signal Timing Intervention",
+      src: "assets/img/image7.jpg",
+      alt: "Speed-density comparison between the Base Scenario and Scenario 2 with reduced traffic signal timing"
+    }
+  },
 
-			discussionTitle: "Discussion",
-			discussionBullets: [
-				"Scenario 1 provides a stable baseline timetable with consistent station dwell and smooth train progression.",
-				"Scenario 2 applies a delay at S2, which then propagates to downstream stations.",
-				"Delay effects grow across frequency levels, with major increases in arrival and departure times at S3 and S4.",
-				"S1 is only slightly affected, while downstream stations absorb most of the disruption.",
-				"This demonstrates the importance of recovery time, dwell management, and operational control in rail scheduling."
-			]
-		},
+  discussionTitle: "Results & Discussion",
+  discussionBullets: [
+    "Base Scenario (100% HDV): Estimated free-flow speed of 4.39 m/s and jam density of 185.2 veh/km.",
+    "Scenario 1 (100% CAV): Free-flow speed increased slightly to 4.46 m/s, while jam density decreased to 181.5 veh/km.",
+    "Scenario 2 (Signal Intervention): Free-flow speed increased to 4.51 m/s, while jam density decreased to 175 veh/km.",
+    "Observed vehicle speeds remained similar across scenarios at comparable traffic densities, showing no clear overall improvement.",
+    "Both interventions require further investigation through additional simulations and alternative traffic conditions."
+  ]
+},
 
   team: {
     title: "Team & Acknowledgments",
