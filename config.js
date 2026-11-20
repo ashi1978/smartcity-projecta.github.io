@@ -146,7 +146,7 @@ window.SITE_CONFIG = {
         bullets: [
 				  { text: "Replace 100% HDVs with 100% CAVs using the CACC car-following model." },
           { text: "Apply CAV settings: 2.9 m/s² acceleration, 7.5 m/s² deceleration, and 0.6-second time headway." },
-          { text: "Maintain consistent traffic conditions and compare speed-density results on Edge E16." }
+          { text: "Maintain consistent traffic conditions and compare speed-density s on Edge E16." }
         ],
         image: "assets/img/image4.jpg"
       },
@@ -164,7 +164,7 @@ window.SITE_CONFIG = {
 
 	
 {
-  title: "Results & Potential Improvements",
+  title: "s & Potential Improvements",
   subtitle:
     "Speed-density analysis of Edge E16 comparing HDV and CAV traffic performance and evaluating the effects of modified traffic signal timing.",
 
@@ -181,16 +181,34 @@ window.SITE_CONFIG = {
     }
   },
 
-	results: {
-  discussionTitle: "Results & Discussion",
-  discussionBullets: [
-    "Base Scenario (100% HDV): Estimated free-flow speed of 4.39 m/s and jam density of 185.2 veh/km.",
-    "Scenario 1 (100% CAV): Free-flow speed increased slightly to 4.46 m/s, while jam density decreased to 181.5 veh/km.",
-    "Scenario 2 (Signal Intervention): Free-flow speed increased to 4.51 m/s, while jam density decreased to 175 veh/km.",
-    "Observed vehicle speeds remained similar across scenarios at comparable traffic densities, showing no clear overall improvement.",
-    "Both interventions require further investigation through additional simulations and alternative traffic conditions."
-  ]
-},
+
+  results: {
+    title: "Results & Potential Improvements",
+    subtitle:
+      "Speed-density analysis of Edge E16 comparing HDV and CAV traffic performance and evaluating the effects of modified traffic signal timing.",
+
+    charts: {
+      left: {
+        title: "Scenario 1 — 100% HDV vs. 100% CAV",
+        src: "assets/img/image6.jpg",
+        alt: "Speed-density comparison between the Base Scenario with 100% HDVs and Scenario 1 with 100% CAVs"
+      },
+      right: {
+        title: "Scenario 2 — Base vs. Signal Timing Intervention",
+        src: "assets/img/image7.jpg",
+        alt: "Speed-density comparison between the Base Scenario and Scenario 2 with reduced traffic signal timing"
+      }
+    },
+
+    discussionTitle: "Results & Discussion",
+    discussionBullets: [
+      "Base Scenario (100% HDV): Estimated free-flow speed of 4.39 m/s and jam density of 185.2 veh/km.",
+      "Scenario 1 (100% CAV): Free-flow speed increased slightly to 4.46 m/s, while jam density decreased to 181.5 veh/km.",
+      "Scenario 2 (Signal Intervention): Free-flow speed increased to 4.51 m/s, while jam density decreased to 175 veh/km.",
+      "Observed vehicle speeds remained similar across scenarios at comparable traffic densities, showing no clear overall improvement.",
+      "Both interventions require further investigation through additional simulations and alternative traffic conditions."
+    ]
+  },
 
   team: {
     title: "Team & Acknowledgments",
@@ -198,17 +216,21 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Your Name", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
+      {
+        name: "Ayesha Mehmood",
+        role: "SUMO Traffic Modelling & Analysis"
+      }
     ],
 
     acknowledgments: [
-      "Workshop: Railway Engineering",
-      "Institution: RoadwayVR University",
+      "Course: SMRTTECH 4SC3",
+      "Institution: McMaster University",
       "Instructor: Ahmad Mohammadi",
-      "Tools: SUMO, Blender, Unity, Python"
+      "Tools: SUMO and NetEdit"
     ],
 
     repoLabel: "Project Repository",
     repoUrl: "https://github.com/USERNAME/REPO"
   }
 };
+
